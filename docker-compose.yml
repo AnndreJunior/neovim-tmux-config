@@ -1,0 +1,10 @@
+services:
+  arch:
+    build: .
+    image: neovim-tmux-config-test
+    container_name: neovim-tmux-config-arch
+    working_dir: /app
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
